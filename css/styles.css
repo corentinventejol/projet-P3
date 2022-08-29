@@ -114,6 +114,7 @@ body {
     padding: 2rem 1rem;
 }
 .card {
+    width: 100%;
     background-color: #fff;
     border-radius: 1rem;
     position: relative;
@@ -148,7 +149,10 @@ body {
     top: 1rem;
     right: .75rem;
 }
-.card__content {
+.card_content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     flex: 1;
   }
 .card_title {
@@ -177,13 +181,12 @@ body {
     position: relative;
     background-color: #000;
 }
-.menu_like {
+.fa-heart {
     transition-duration: .25s;
     background-color: #f6f6f6;
     display: flex;
     align-items: center;
     justify-content: center;
-    mix-blend-mode: lighten;
 }
 .menu_btn::before, .menu_like {
     position: absolute;
