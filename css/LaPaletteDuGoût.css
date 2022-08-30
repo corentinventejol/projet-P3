@@ -81,3 +81,52 @@ body, html {
     left: 0;
     height: 100%;
     width: 100%;
+}
+.menu_complet {
+    display: grid;     
+}
+.entrée  {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+.entrée_title  {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: .5rem;
+    font-weight: 400;
+}
+.menuItem {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+}
+.delay-0 {
+    animation-delay: 0s;
+}
+.menuItem__header, .menuItem__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.menuItem__header {
+    flex: 1;
+}
+.menuItem__title {
+    margin: 0;
+}
+.menuItem__header, .menuItem__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
