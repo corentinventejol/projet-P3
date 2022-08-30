@@ -1,7 +1,11 @@
 @font-face          {
     font-family: "Shrikhand-Regular";
     src: url("./fonts/Shrikhand-Regular.ttf");
-    }
+}
+p,
+span {
+    font-family: "";
+}
 .flexCentre{
     display: flex;
     justify-content: center;
