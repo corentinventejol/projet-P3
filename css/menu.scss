@@ -1,9 +1,4 @@
 /* telephone */
-body, html {
-    margin: 0;
-    font-family: Roboto,sans-serif;
-    scroll-behavior: smooth;
-}
 /* header */
 .header {
     padding: 1rem;
@@ -20,7 +15,6 @@ body, html {
     margin-left: 5%;
 }
 .header--logo{
-    font-family: Shrikhand,"cursive";
     margin: 0;
     text-align: center;
 }
@@ -58,7 +52,7 @@ body, html {
     justify-content: center;
     mix-blend-mode: lighten;
 }
-.menu__btn::before, .menu__like {
+.menu_btn::before, .menu_like {
     position: absolute;
     top: 0;
     left: 0;

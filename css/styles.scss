@@ -1,10 +1,17 @@
 @font-face          {
     font-family: "Shrikhand";
     src: url("../fonts/Shrikhand-Regular.ttf");
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+h1,
+h2 {
+    font-family: "Shrikhand";
 }
 p,
+h3,
 span {
-    font-family: "Shrikhand";
+    font-family: roboto;
 }
 .flexCentre{
     display: flex;
@@ -138,16 +145,6 @@ body {
     box-shadow: none;
     object-fit: cover;
 }
-.card_btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: initial;
-    border: 0 solid transparent;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 .card_badge {
     background-color: #99e2d0;
     color: #1b6150;
@@ -169,39 +166,21 @@ body {
 }
 .card_subtitle {
     margin: 0;
-  }
+}
+.heart {
+        color: transparent;
+        background-image: linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+}
+:hover .fa-regular {
+    opacity: 0;
+}
 .card_footer {
     padding: 1rem;
     position: relative;
     display: flex;
     align-items: center;
-}
-.menu_btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: initial;
-    border: 0 solid transparent;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    background-color: #000;
-}
-.fa-heart {
-    transition-duration: .25s;
-    background-color: #f6f6f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menu_btn::before, .menu_like {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
 }
 /* footer */
 .footer {
