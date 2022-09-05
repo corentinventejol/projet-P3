@@ -175,18 +175,18 @@ body {
     height: 2rem;
     width: 2rem;
 }
-:hover .fa-regular {
+.heart:hover .fa-regular {
     display: none;
 }
-:hover .fa-solid {
+.heart:hover .fa-solid {
     display: block;
 }
-.fa-solid {
+.heart .fa-solid {
     display: none;
     width: 100%;
     height: 100%;
 }
-.fa-regular {
+.heart .fa-regular {
     display: block;
     width: 100%;
     height: 100%;
