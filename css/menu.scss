@@ -6,6 +6,19 @@
     position: relative;
     z-index: 1000;
 }
+.header_arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
+}
 .header--withBackArrow {
     position: relative;
 }
@@ -14,7 +27,7 @@
     display: flex;
     margin-left: 5%;
 }
-.header--logo{
+.header--logo {
     margin: 0;
     text-align: center;
 }
@@ -44,20 +57,30 @@
     align-items: center;
     justify-content: space-between;
 }
-.menu_like {
-    transition-duration: .25s;
-    background-color: #f6f6f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: lighten;
+.heart {
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    height: 2rem;
+    width: 2rem;
 }
-.menu_btn::before, .menu_like {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+.heart:hover .fa-regular {
+    display: none;
+}
+.heart:hover .fa-solid {
+    display: block;
+    transition: 15s;
+}
+.heart .fa-solid {
+    display: none;
     width: 100%;
+    height: 100%;
+    color: transparent;
+}
+.heart .fa-regular {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .menu_complet {
     display: grid;     
@@ -146,4 +169,24 @@
 }
 .menuItem_icon {
     color: #99e2d0;
+}
+/*footer*/
+.wrapBtn {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.commandBtn {
+    border: 0;
+    padding: .75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: .25s;
+    box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+    cursor: pointer;
 }
