@@ -136,6 +136,8 @@ body {
     text-decoration: none;
     color: inherit;
     display: block;
+    cursor: pointer;
+    margin-bottom: 2rem;    
 }
 .card_img {
     height: 12rem;
@@ -172,6 +174,8 @@ body {
     -webkit-background-clip: text;
     height: 2rem;
     width: 2rem;
+    transition-duration: 2s;
+    transition-property: background-image;
 }
 .heart:hover .fa-regular {
     display: none;
