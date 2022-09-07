@@ -257,3 +257,44 @@ body {
     box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
     cursor: pointer;
 }
+/* footer */
+.footer {
+    background-color: #353535;
+}
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.footer_logo {
+    color: #fff;
+    font-family: "Shrikhand-Regular" !important;
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+}
+.footer_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer_listElt {
+    margin: .5rem 0;
+      margin-top: 0.5rem;
+}
+.footer_link {
+    color: #fff;
+    text-decoration: none;
+}
+.footer_link:hover {
+    text-decoration: underline;
+}
+.footer_icon {
+    width: 1.2rem;
+    margin-right: .5rem;
+  }
+.footer_listElt:first-child {
+    margin-top: 0;
+}
+.footer_listElt:last-child {
+    margin-bottom: 0;
+}  
