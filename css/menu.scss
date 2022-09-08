@@ -1,4 +1,23 @@
 /* telephone */
+@font-face          {
+    font-family: "Shrikhand";
+    src: url("../fonts/Shrikhand-Regular.ttf");
+}
+@font-face { 
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);    
+}
+h1,
+h2 {
+    font-family: "Shrikhand";
+}
+p,
+h3,
+h4,
+.menuItem_price,
+span {
+    font-family: "Roboto";
+}
 /* header */
 body {
     margin: 0;
@@ -206,24 +225,15 @@ body {
     margin: 0;
 }
 .menuItem:hover .fa-check {
-    animation-duration: 0.5s;
-    animation-name: check;
-    animation-iteration-count: 1;
-} 
-@keyframes check {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-        transform-origin: center;
-    }
+    transform: rotate(360deg);
+    transition: .5s;
 }
 .menuItem_header {
     flex: 1;
 }
 .menuItem_title {
     margin: 1rem 0 0 1rem;
+    
 }
 .menuItem_header, .menuItem_title {
     white-space: nowrap;

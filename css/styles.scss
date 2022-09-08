@@ -1,8 +1,10 @@
 @font-face          {
     font-family: "Shrikhand";
     src: url("../fonts/Shrikhand-Regular.ttf");
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face { 
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Black.ttf);;    
 }
 h1,
 h2 {
@@ -11,7 +13,7 @@ h2 {
 p,
 h3,
 span {
-    font-family: roboto;
+    font-family: "Roboto";
 }
 .flexCentre{
     display: flex;
