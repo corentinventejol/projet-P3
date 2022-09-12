@@ -30,7 +30,7 @@ body {
 }
 .header_arrow {
   position: absolute;
-  left: 2rem;
+  left: 1rem;
   height: 2rem;
   width: 2rem;
   top: 50%;
@@ -62,6 +62,18 @@ body {
     width: 100%;
     object-fit: cover;
 }
+.noteImg {
+    max-width: 100%;
+    max-height: 18rem;
+    width: 100%;
+    object-fit: cover;
+}
+.françaiseImg {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
 /* main */
 .container {
     max-width: 1280px;
@@ -75,6 +87,9 @@ body {
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
+}
+.menuALaFrancaise {
+    margin-top: -3rem;
 }
 .menu_header {
     padding: 0.5rem 2rem 0 1rem;
