@@ -347,3 +347,8 @@ body {
     margin-bottom: 0;
 }
 /* desktop */
+@media only screen and (min-width : 1024px) {
+    .HeaderIcon {
+        
+    }
+}
