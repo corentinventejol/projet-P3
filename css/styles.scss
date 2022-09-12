@@ -1,44 +1,54 @@
-@font-face          {
+@font-face {
     font-family: "Shrikhand";
     src: url("../fonts/Shrikhand-Regular.ttf");
 }
-@font-face { 
+
+@font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Black.ttf);;    
+    src: url(../fonts/Roboto-Black.ttf);
+    ;
 }
+
 h1,
 h2 {
     font-family: "Shrikhand";
 }
+
 p,
 h3,
 span {
     font-family: "Roboto";
 }
-.flexCentre{
+
+.flexCentre {
     display: flex;
     justify-content: center;
     align-items: center
 }
-.flexBetween{
+
+.flexBetween {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 /* telephone */
 body {
     margin: 0;
 }
+
 /* header */
 .logo {
     box-shadow: 1px black;
 }
+
 .logo img {
     width: 50%;
     height: auto;
     margin-top: 3%;
     margin-bottom: 3%;
 }
+
 .HeaderIcon {
     display: flex;
     flex-direction: row;
@@ -48,63 +58,76 @@ body {
     background-color: #eaeaea;
     padding-left: 25%;
 }
+
 .HeaderIcon p {
-     margin-left: 8%;
+    margin-left: 8%;
 }
+
 .titreLegende {
     background-color: #f6f6f6;
 }
+
 .titreLegende h1 {
     padding: 10% 10% 5% 10%;
     text-align: center;
     margin: 0;
 }
+
 .titreLegende p {
     margin: 0;
     padding: 0 10% 8% 10%;
     text-align: center;
 }
+
 .legendeBouton {
     padding-bottom: 10%;
 }
+
 .legendeBouton p {
-    background: linear-gradient(to bottom right, #FF79DA ,#9356DC  );
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border-radius: 30px;
     padding: 4%;
     color: white;
 }
+
 /* main */
 .tuto {
     padding: 2rem 1rem;
 }
+
 .container {
     max-width: 1280px;
     margin: auto;
-    position: relative; 
+    position: relative;
 }
+
 .tuto_title {
     margin-top: 0;
 }
+
 .tuto_steps {
     margin: 0;
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
 }
+
 .tuto_icon {
     margin-right: 1rem;
     color: #7e7e7e;
 }
+
 .tuto_step {
     padding: 1.5rem;
     margin: 1rem 0 1rem .75rem;
     margin-top: 1rem;
-    box-shadow: .25rem .25rem .5rem rgba(0,0,0,.125);
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .125);
     border-radius: 1.25rem;
     background-color: #f6f6f6;
     display: flex;
     position: relative;
 }
+
 .tuto_step::before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
@@ -119,17 +142,21 @@ body {
     position: absolute;
     left: -.75rem;
 }
+
 .tuto_step:first-child {
     margin-top: 0;
-  }
-  .tuto_step:last-child {
+}
+
+.tuto_step:last-child {
     margin-bottom: 0;
-  }
+}
+
 /* section */
 .restaurants {
     background-color: #f6f6f6;
     padding: 2rem 1rem;
 }
+
 .card {
     width: 100%;
     background-color: #fff;
@@ -139,8 +166,9 @@ body {
     color: inherit;
     display: block;
     cursor: pointer;
-    margin-bottom: 2rem;    
+    margin-bottom: 2rem;
 }
+
 .card_img {
     height: 12rem;
     width: 100%;
@@ -149,6 +177,7 @@ body {
     box-shadow: none;
     object-fit: cover;
 }
+
 .card_badge {
     background-color: #99e2d0;
     color: #1b6150;
@@ -158,88 +187,162 @@ body {
     top: 1rem;
     right: .75rem;
 }
+
 .card_content {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     flex: 1;
-  }
+}
+
 .card_title {
     margin: 0 0 .25rem;
 }
+
 .card_subtitle {
     margin: 0;
 }
-.heart {
-    background-image: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    height: 2rem;
-    width: 2rem;
-    transition-duration: 2s;
-    transition-property: background-image;
-}
-.heart:hover .fa-regular {
-    display: none;
-}
-.heart:hover .fa-solid {
-    display: block;
-}
-.heart .fa-solid {
-    display: none;
-    width: 100%;
-    height: 100%;
-    color: transparent;
-}
-.heart .fa-regular {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+
 .card_footer {
     padding: 1rem;
     position: relative;
     display: flex;
     align-items: center;
 }
+.fa-regular {
+    position: relative;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+}
+.fa-regular:hover {
+    animation: heart 1s 0s forwards;
+}
+@keyframes heart {
+    0% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    10% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    20% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    30% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    40% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    50% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    60% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    70% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    80% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    90% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+    100% {
+        background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+}
+.fa-regular {
+    position: relative;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+}
 /* footer */
 .footer {
     background-color: #353535;
 }
+
 .footer .container {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
+
 .footer_logo {
     color: #fff;
     font-family: "Shrikhand-Regular" !important;
     font-size: 1.2rem;
     margin: 0 0 1rem;
 }
+
 .footer_list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer_listElt {
     margin: .5rem 0;
-      margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
+
 .footer_link {
     color: #fff;
     text-decoration: none;
 }
+
 .footer_link:hover {
     text-decoration: underline;
 }
+
 .footer_icon {
     width: 1.2rem;
     margin-right: .5rem;
-  }
+}
+
 .footer_listElt:first-child {
     margin-top: 0;
 }
+
 .footer_listElt:last-child {
     margin-bottom: 0;
-}  
+}
