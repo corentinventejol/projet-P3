@@ -419,4 +419,16 @@ body {
 }
 .footer_listElt:last-child {
     margin-bottom: 0;
-}  
+}
+    /* desktop */
+@media only screen and (min-width : 1024px) {
+    /* header */
+    .restaurantContainer h1 {
+        margin-left: 39%;
+        font-size: 39px;
+    }
+    .menu_complet {
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+} 
