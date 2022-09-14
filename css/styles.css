@@ -38,9 +38,6 @@ body {
 }
 
 /* header */
-.logo {
-    box-shadow: 1px black;
-}
 
 .logo img {
     width: 50%;
