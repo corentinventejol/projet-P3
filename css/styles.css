@@ -344,7 +344,7 @@ body {
     margin-bottom: 0;
 }
     /* desktop */
-@media only screen and (min-width : 1024px) {
+@media all and (min-width : 1024px) {
     /* header */
     .HeaderIcon i {
         margin-left: 25%;

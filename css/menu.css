@@ -421,7 +421,7 @@ body {
     margin-bottom: 0;
 }
     /* desktop */
-@media only screen and (min-width : 1024px) {
+@media all and (min-width : 1024px) {
     /* header */
     .restaurantContainer h1 {
         margin-left: 39%;
