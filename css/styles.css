@@ -146,6 +146,10 @@ body {
     color: white;
 }
 
+.legendeBouton p:hover {
+    background: linear-gradient(to bottom right, #f791dd, #9a64db);
+}
+
 /* main */
 .tuto {
     padding: 2rem 1rem;
@@ -428,9 +432,6 @@ body {
     }
     .legendeBouton {
         padding: 0;
-    }
-    .legendeBouton p:hover {
-        background: linear-gradient(to bottom right, #f791dd, #9a64db);
     }
     .legendeBouton p {
         padding: 1%;
