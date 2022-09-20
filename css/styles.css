@@ -142,7 +142,7 @@ body {
 .legendeBouton p {
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border-radius: 30px;
-    padding: 4%;
+    padding: 2%;
     color: white;
 }
 
@@ -406,6 +406,7 @@ body {
 .footer_listElt:last-child {
     margin-bottom: 0;
 }
+
     /* desktop */
 @media all and (min-width : 1024px) {
     /* header */
