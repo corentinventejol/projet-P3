@@ -4,7 +4,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 1);
     animation: loader 0.01s 3;
     animation-delay: 1.75s;
     animation-fill-mode: both;
@@ -149,6 +149,7 @@ body {
 
 .legendeBouton p:hover {
     background: linear-gradient(to bottom right, #f791dd, #9a64db);
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .4);
 }
 
 /* main */
@@ -203,7 +204,13 @@ body {
     position: absolute;
     left: -.75rem;
 }
-
+.tuto_step:hover {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .6);
+}
+.tuto_step:hover i {
+    color: white;
+}
 .tuto_step:first-child {
     margin-top: 0;
 }

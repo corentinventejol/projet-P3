@@ -381,6 +381,7 @@ body {
 }
 .commandBtn:hover {
         background: linear-gradient(to bottom right,  #f791dd, #9a64db  );
+        box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .4);
 }
 
 /* footer */
