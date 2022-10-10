@@ -7,8 +7,8 @@
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.ttf);    
 }
-h1,
-h2 {
+h2,
+.footer_logo {
     font-family: "Shrikhand";
 }
 p,
@@ -103,6 +103,9 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 1.1rem;
+}
+.menu_title {
+    font-size: 1.8rem;
 }
 .fa-regular {
     position: relative;
@@ -395,7 +398,6 @@ body {
 }
 .footer_logo {
     color: #fff;
-    font-family: "Shrikhand-Regular" !important;
     font-size: 1.2rem;
     margin: 0 0 1rem;
 }

@@ -64,15 +64,17 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url("../fonts/Roboto-Medium.ttf");
     ;
 }
 
-h1,
-h2 {
+
+.footer_logo {
     font-family: "Shrikhand";
 }
 
+h2,
+b,
 p,
 h3,
 span {
@@ -377,7 +379,6 @@ body {
 
 .footer_logo {
     color: #fff;
-    font-family: "Shrikhand-Regular" !important;
     font-size: 1.2rem;
     margin: 0 0 1rem;
 }
